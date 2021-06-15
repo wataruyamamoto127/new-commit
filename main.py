@@ -39,7 +39,6 @@ def callback():
      
     except InvalidSignatureError:
         abort(400)
-　# handleの処理を終えればOK
     return 'OK'
  
 ## 2 ##
