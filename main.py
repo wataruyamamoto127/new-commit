@@ -14,11 +14,11 @@ from linebot.models import (
 app = Flask(__name__)
 
 #環境変数取得
-ACCESS_TOKEN = os.environ["YOUR_CHANNEL_ACCESS_TOKEN"]
-SECRET = os.environ["YOUR_CHANNEL_SECRET"]
+YOUR_CHANNEL_ACCESS_TOKEN = os.environ["FVageZGKH5YldxUw/h+fIaap7pn0qctY5rHl1m5GvRdYc3dEJKignGbfozJ7GhRhdkNnJtqsGekzqsUJEXvqA7 mw6kOW5ELY9BwMoGwXJB0h0vYFHcgSzdezWZ+wlLCJ45/Ca/t/DcwGYqatua1AdB04t89/1O/w1cDnyilFU="]
+YOUR_CHANNEL_SECRET = os.environ["46a6d1d0a05ee2757ca5bef9920ada05"]
 
-line_bot_api = LineBotApi(ACCESS_TOKEN)
-handler = WebhookHandler(SECRET)
+line_bot_api = LineBotApi(YOUR_CHANNEL_ACCESS_TOKEN)
+handler = WebhookHandler(YOUR_CHANNEL_SECRET)
 
 @app.route("/")
 def hello_world():
