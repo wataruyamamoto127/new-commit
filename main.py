@@ -25,7 +25,7 @@ handler = WebhookHandler(SECRET)
 
 @app.route("/")
 def hello_world():
-    return ACCESS_TOKEN
+    return "hello world!"
 
 
 @app.route("/callback", methods=['POST'])
