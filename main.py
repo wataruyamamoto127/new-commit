@@ -25,7 +25,7 @@ handler = WebhookHandler(SECRET)
 
 @app.route("/")
 def hello_world():
-    return line_bot_api
+    return ACCESS_TOKEN
 
 
 @app.route("/callback", methods=['POST'])
